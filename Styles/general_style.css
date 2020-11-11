@@ -1,0 +1,457 @@
+/************* Generelt ************/
+
+H1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #FEF5F4;
+}
+
+H2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FEF5F4;
+}
+
+H3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #FEF5F4;
+}
+
+H3 a {
+    font-size: inherit !important;
+    text-decoration: underline !important;
+}
+
+p,
+span,
+li,
+input,
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #FEF5F4;
+}
+
+.gridwrapper {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, auto-fill);
+    grid-gap: 50px;
+    margin: 50px 0;
+}
+
+.gradientwrapper {
+    /**Gradient for alle bokse**/
+    padding: 30px 15px;
+    background-image: linear-gradient(#D32545, #FE7100);
+    border-radius: 10px;
+}
+
+/**Billeder**/
+figure img {
+    border-radius: 10px;
+}
+
+/********* Frontpage ************/
+
+/** Splash **/
+
+.frontpage {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+
+#splash {
+    height: 100vh;
+    background-image: url("../Billeder_Videoer/splash.jpg");
+    background-size: cover;
+    background-position: 45% 10%;
+    max-width: none;
+}
+
+.splash_text {
+    position: absolute;
+    left: 5vw;
+    bottom: 15vw;
+}
+
+.splash_text h3 {
+    margin-top: 3vw;
+}
+
+.splash.social {
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 65px;
+    grid-template-rows: 65px 65px 65px 65px 65px 65px;
+    column-gap: 2px;
+    position: absolute;
+    top: 100px;
+    right: 2vw;
+}
+
+.splash.social img {
+    width: 2rem;
+}
+
+/** About **/
+
+
+/** Videos **/
+
+.gradientwrapper video {
+    width: 100%;
+}
+
+.gradientwrapper .video_player {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    margin: 0 auto;
+}
+
+.gradientwrapper .video_player .play {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    z-index: 2;
+    height: 3rem;
+    width: 4.5rem;
+    border-radius: 1rem;
+    background: url(../Billeder_Videoer/play.png) no-repeat center rgba(0, 0, 0, 0.6);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.gradientwrapper .video_player.large .play {
+    top: 30%;
+    left: 40%;
+}
+
+.gradientwrapper .video_player .play:hover {
+    background: url(../Billeder_Videoer/play.png) no-repeat center red;
+}
+
+
+.gradientwrapper .video_player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gradientwrapper .video_player img {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.youtube_subscribe p {
+    /** subscribekknap **/
+    display: inline-block;
+    width: 75vw;
+}
+
+.youtube_subscribe img {
+    display: inline-block;
+    width: 50px;
+}
+
+/** Photos **/
+
+.gallery {
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    left: 0;
+}
+
+.left {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 47%;
+    left: 15px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #100F1C;
+    border-radius: 2rem;
+    background-image: url(../Ikoner/left.svg);
+    cursor: pointer;
+}
+
+.right {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 47%;
+    right: 15px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #100F1C;
+    border-radius: 2rem;
+    background-image: url(../Ikoner/right.svg);
+    cursor: pointer;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#photos_wrapper h2 {
+    margin-top: 30px;
+}
+
+/** revirews **/
+
+#reviews .gradientwrapper {
+    margin-bottom: 50px;
+}
+
+.gradientwrapper p {
+    text-align: center;
+}
+
+#reviews h2 {
+    margin-bottom: 20px;
+}
+
+/************ Contact  ************/
+
+#contact h2 {
+    margin-bottom: 50px;
+}
+
+#contact h3 {
+    margin-bottom: 20px;
+}
+
+.pr_btn div {
+    width: 70%;
+    margin: 50px auto 0 auto;
+    background-image: linear-gradient(#D32545, #FE7100);
+    border-radius: 10px;
+}
+
+.pr_btn H3 {
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+#send {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    border: none;
+    background-image: linear-gradient(#D32545, #FE7100);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#send:hover {
+    text-decoration: underline;
+}
+
+.gradient_border {
+    background-image: linear-gradient(#D32545, #FE7100);
+    padding: 2px;
+    border-radius: 10px;
+}
+
+
+
+
+/************ Music and lyrics ************/
+
+.collapse {
+    width: 100%;
+    max-height: 15vw;
+    padding: 0 2vw 2vw;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all .3s;
+    background-image: linear-gradient(#D32545, #FE7100);
+}
+
+.collapse.open {
+    max-height: 9000px;
+}
+
+.collapse .title {
+    text-align: center;
+    display: inline-block;
+    line-height: 15vw;
+
+}
+
+.collapse .arrow {
+    background-image: url("../Ikoner/down.svg");
+    width: 7vw;
+    height: 7vw;
+    display: inline-block;
+    margin: 4vw 10px;
+    float: right;
+}
+
+.collapse .arrow::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.collapse .arrow.open {
+    background-image: url("../Ikoner/up.svg") !important;
+}
+
+.album,
+.single {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-image: linear-gradient(#D32545, #FE7100);
+    align-items: flex-start;
+    position: relative;
+}
+
+.album img,
+.single img {
+    width: 30vw;
+    height: 30vw;
+    margin: 5vw;
+}
+
+.album h2,
+.single h2 {
+    font-size: 1rem;
+}
+
+.album .year,
+.single .year {
+    font-size: 0.8rem;
+}
+
+.album div,
+.single div {
+    margin: 5vw 0;
+    width: 38vw;
+}
+
+.album .links,
+.single .links {
+    position: absolute;
+    bottom: 5vw;
+    right: 5vw;
+}
+
+/************ Concerts ************/
+
+.concert {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-image: linear-gradient(#D32545, #FE7100);
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.concert img {
+    width: 35vw;
+    height: 35vw;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.concert h2 {
+    text-align: center;
+}
+
+.concert div {
+    margin: 2vw 0 2vw 2vw;
+    width: 40vw;
+}
+
+.concert .desc {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin-bottom: 1vw;
+}
+
+.concert .place {
+    font-size: 0.5rem;
+    line-height: 1rem;
+    position: absolute;
+    bottom: 12vw;
+    left: 41vw;
+}
+
+.concert .time {
+    font-size: 0.5rem;
+    line-height: 1rem;
+    position: absolute;
+    bottom: 8vw;
+    left: 41vw;
+}
+
+.concert .place_icon {
+    background-image: url("../Ikoner/lokation.svg");
+    background-size: cover;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    bottom: 13vw;
+    left: 37vw;
+}
+
+.concert .time_icon {
+    background-image: url("../Ikoner/tid.svg");
+    background-size: cover;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    bottom: 9vw;
+    left: 37vw;
+}
+
+.concert .buy {
+    position: absolute;
+    bottom: 2vw;
+    right: 3vw;
+}

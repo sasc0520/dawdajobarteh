@@ -1,0 +1,12 @@
+@media (min-width:1920px) {
+
+    /** Videos **/
+    .video_player {
+        height: 290px !important;
+    }
+
+    .video_player.large {
+        height: 630px !important;
+    }
+
+}

@@ -1,0 +1,339 @@
+@media (min-width:1080px) {
+
+    main {
+        margin: 6rem 0 0 0;
+        padding: 2vw;
+    }
+
+    .marginwrapper {
+        margin: 0 20vw;
+        padding: 0 0 0;
+    }
+
+    .hide_m {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        margin-top: 80px;
+    }
+
+    h2 {
+        margin-top: 50px;
+    }
+
+    h3 {
+        margin-top: 50px;
+    }
+
+    .gridwrapper h1 {
+        margin-top: 0;
+    }
+
+    .gridwrapper {
+        margin: 100px 0;
+    }
+
+    /** navigation **/
+
+    .menu_wrapper {
+        padding: 0 1vw;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_wrapper h1 {
+        margin-top: 0;
+    }
+
+    .burger_open {
+        display: none;
+    }
+
+    .burger_open::after {}
+
+    .burger_open div {
+        display: none;
+    }
+
+    nav .menu_pos {
+        display: none;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    .social.desktop {
+        display: grid;
+        grid-template-columns: 60px 60px 60px 60px 60px 60px;
+        grid-template-rows: 60px;
+        grid-gap: 4px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .social.desktop img {
+        width: 30px;
+        vertical-align: middle;
+        margin: 0;
+    }
+
+    .desktop_menu {
+        display: grid;
+        grid-template-columns: 110px 160px 110px;
+        grid-template-rows: 40px;
+        grid-gap: 0px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sub_menu ul {
+        height: 2.4rem;
+        width: 60%;
+        margin: 0 auto;
+        list-style: none;
+        display: grid;
+        text-align: center;
+        padding: 0 100px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    a,
+    a:active,
+    a:link,
+    a:visited {
+        line-height: 2vw;
+        font-size: 0.9rem;
+    }
+
+    .social.mobile {
+        display: none;
+    }
+
+    #scroll_btn {
+        bottom: 1vw;
+        left: 95vw;
+        padding: 10px;
+    }
+
+    #scroll_btn img {
+        width: 15px;
+        height: 15px;
+        margin-top: 0;
+    }
+
+
+    /** Footer **/
+
+    footer {
+        padding: 1vw 2vw;
+    }
+
+    .social.footer {
+        width: 325px;
+    }
+
+    .social.footer img {
+        width: 2rem;
+        display: inline-block;
+        margin: 20px 5px 0 5px;
+    }
+
+    .social.footer a {
+        text-decoration: none;
+    }
+
+    /************* Generelt ************/
+
+    .gridwrapper {
+        grid-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /********* Frontpage ************/
+
+    /** Splash **/
+
+    .splash_text {
+        bottom: 150px;
+    }
+
+    .splash.social {
+        display: none;
+    }
+
+    /** About **/
+
+
+    /** Videos **/
+    .video_player {
+        height: 185px;
+    }
+
+    .gradientwrapper .video_player .play {
+        top: 30%;
+        left: 40%;
+
+    }
+
+    .gradientwrapper .video_player.large .play {
+        top: 40%;
+        left: 45%;
+    }
+
+
+    .video_player.large {
+        height: 450px;
+    }
+
+    .youtube_subscribe p {
+        width: 25vw;
+    }
+
+    /** Photos **/
+
+    #photos_wrapper h2 {
+        margin-top: 50px;
+    }
+
+    /** revirews **/
+
+    #reviews .gradientwrapper {
+        width: 80%;
+    }
+
+    #reviews .l1 {}
+
+    #reviews .r2 {
+        margin-left: 20%;
+    }
+
+    /************ Contact  ************/
+    #contact h3 {
+        margin-bottom: 50px;
+    }
+
+    #contact h2 {
+        margin-top: 0;
+    }
+
+    #contact .gridwrapper {
+        align-items: flex-start;
+    }
+
+    #contact .pr_btn div {
+        margin: 0;
+    }
+
+    /************ Music and lyrics ************/
+
+    .collapse {
+        max-height: 4vw;
+        padding: 0 1vw 1vw;
+    }
+
+    .collapse .title {
+        line-height: 4vw;
+
+    }
+
+    .gridwrapper.albums,
+    .gridwrapper.singles,
+    .gridwrapper.lyrics {
+        margin-top: 20px;
+    }
+
+    .collapse .arrow {
+        width: 2vw;
+        height: 2vw;
+        margin: 1vw 10px;
+    }
+
+    .album img,
+    .single img {
+        width: 30%;
+        height: 100%;
+        margin: 1vw;
+    }
+
+    .album h2,
+    .single h2 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .album .year,
+    .single .year {
+        font-size: 0.8rem;
+    }
+
+    .album div,
+    .single div {
+        margin: 1vw 0;
+        width: 60%;
+    }
+
+    .album .links,
+    .single .links {
+        bottom: 1vw;
+        right: 1vw;
+    }
+
+    /************ Concerts ************/
+
+    .concerts {
+        margin-top: 100px;
+    }
+
+    .concert h2 {
+        margin-top: 0;
+    }
+
+    .concert div {
+        width: 30vw;
+        margin: 1vw;
+    }
+
+    .concert img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .concert .buy {
+        bottom: 1vw;
+        right: 1vw;
+    }
+
+    .concert .place {
+        bottom: 3.5vw;
+        left: 13vw;
+    }
+
+    .concert .time {
+        font-size: 0.8rem;
+        bottom: 2vw;
+        left: 13vw;
+    }
+
+    .concert .place_icon {
+        bottom: 3.5vw;
+        left: 11vw;
+    }
+
+    .concert .time_icon {
+        bottom: 2vw;
+        left: 11vw;
+    }
+
+}

@@ -1,0 +1,259 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #100F1C;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #100f1c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fef5f4;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(#d32545, #fe7100);
+}
+
+main {
+    margin: 6rem 0 0 0;
+    padding: 5vw;
+}
+
+.marginwrapper {
+    padding: 5vw;
+}
+
+img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.hide_m {
+    display: none;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/** navigation **/
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: #100F17;
+}
+
+.menu_wrapper {
+    padding: 2.5vw 5vw;
+}
+
+.logo H1 {
+    font-family: 'Megrim', cursive;
+    text-align: initial;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #FEF5F4;
+    margin-bottom: 0;
+}
+
+.burger_open {
+    width: 1.7rem;
+    height: 1.5rem;
+    display: inline-block;
+    margin: 5px auto;
+    position: relative;
+    float: right;
+}
+
+.burger_open::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.burger_open div {
+    height: 3px;
+    width: 100%;
+    background-color: #FEF5F4;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.open_menu .line1 {
+    transform: rotate(45deg);
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.open_menu .line2 {
+    display: none;
+}
+
+.open_menu .line3 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+
+.burger_close {
+    width: 1.5rem;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+nav .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    background-image: linear-gradient(#D32545, #FE7100);
+}
+
+nav .menu li {
+    /* al positionerigen af -burger close styres her*/
+    text-align: right;
+    margin: 2.5rem 5vw 0 165px;
+}
+
+nav .menu li:first-child {
+    margin-top: 100px;
+}
+
+nav .menu li a {
+    color: #FEF5F4;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.sub_menu {
+    background-image: linear-gradient(#D32545, #FE7100);
+}
+
+.sub_menu ul {
+    height: 8vw;
+    list-style: none;
+    display: grid;
+    text-align: center;
+    padding: 0 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+a,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #FEF5F4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 8vw;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p a {
+    text-decoration: underline !important;
+}
+
+
+.social.mobile {
+    margin: 100px auto 0 auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 85px 85px 85px;
+    grid-template-rows: 85px 85px;
+    column-gap: 5px;
+    position: absolute;
+    bottom: 13vw;
+    right: 5vw;
+}
+
+.social.mobile img {
+    width: 2.5rem;
+}
+
+#scroll_btn {
+    position: sticky;
+    bottom: 5vw;
+    left: 90vw;
+    z-index: 4;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(#D32545, #FE7100);
+    padding: 15px;
+    margin: 18px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#scroll_btn img {
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+}
+
+
+/** Footer **/
+
+.h3_footer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    color: #FEF5F4;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-image: linear-gradient(#D32545, #FE7100);
+    padding: 2.5vw 5vw;
+}
+
+.social.footer {
+    width: 325px;
+    margin: 0 auto;
+}
+
+.social.footer img {
+    width: 2.5rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social.footer a {
+    text-decoration: none;
+}
